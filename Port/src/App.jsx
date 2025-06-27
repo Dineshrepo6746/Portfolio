@@ -6,6 +6,9 @@ import Projects from './components/Projects';
 import Education from './components/Education';
 
 function App() {
+  React.useEffect(() => {
+    document.title = 'Dinesh Palani';
+  }, []);
   return (
     <div className="portfolio-root">
       <header className="portfolio-header">
