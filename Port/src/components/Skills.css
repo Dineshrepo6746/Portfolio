@@ -1,0 +1,44 @@
+.skills-section {
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  border-radius: 1.2rem;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 900px;
+  box-shadow: 0 4px 24px #a1c4fd33;
+  animation-delay: 0.2s;
+}
+.skills-section h2 {
+  color: #5f2c82;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+}
+.skills-list h4 {
+  margin-bottom: 0.7rem;
+  color: #22223b;
+}
+.skill-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, #fda085 0%, #f6d365 100%);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 2rem;
+  padding: 0.5rem 1.2rem;
+  margin: 0.3rem 0.5rem 0.3rem 0;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 8px #fda08533;
+  transition: background 0.2s, transform 0.2s;
+}
+.skill-badge:hover {
+  background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+  transform: scale(1.08);
+}
+@media (max-width: 700px) {
+  .skills-section { padding: 1rem; }
+  .skills-list { gap: 1.2rem; }
+}

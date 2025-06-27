@@ -1,0 +1,55 @@
+.education-section {
+  background: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%); /* Soft purple to pink gradient */
+  border-radius: 1.2rem;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 900px;
+  box-shadow: 0 4px 24px #a18cd133;
+  animation-delay: 0.4s;
+}
+.education-section h2 {
+  color: #3a3a6a; /* Deep blue for contrast */
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+.education-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+}
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.education-item {
+  background: linear-gradient(120deg, #fdf6e3 0%, #e0c3fc 100%); /* Cream to light purple */
+  border-radius: 1rem;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 2px 12px #fbc2eb33;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.education-item:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 8px 32px #96e6a155;
+}
+.degree {
+  font-weight: 700;
+  color: #5f2c82;
+}
+.school {
+  font-weight: 500;
+  color: #22223b;
+}
+.year, .cgpa {
+  font-size: 0.98rem;
+  color: #4e944f;
+}
+@media (max-width: 700px) {
+  .education-section { padding: 1rem; }
+  .education-item { padding: 0.7rem 0.8rem; }
+}
